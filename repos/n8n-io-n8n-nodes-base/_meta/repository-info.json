@@ -1,0 +1,89 @@
+{
+  "repository_metadata": {
+    "id": "repo_007",
+    "name": "n8n-io-n8n-nodes-base",
+    "source": "n8n-io/n8n (integrated base nodes)",
+    "clone_timestamp": "2025-07-30T21:15:00Z",
+    "neural_classification": {
+      "level": "L1_OFFICIAL_COMPONENTS", 
+      "weight": 0.95,
+      "criticality": "critical",
+      "dependency_level": "zero"
+    },
+    "repository_info": {
+      "description": "Nodes base integrados do n8n - 400+ integrações builtin oficiais",
+      "primary_language": "TypeScript",
+      "integration_type": "Built-in nodes (não repositório separado)",
+      "total_integrations": "400+",
+      "location": "Integrado ao n8n core repository",
+      "key_features": [
+        "400+ integrações oficiais builtin",
+        "Nodes para apps populares (GitHub, HubSpot, Slack)",
+        "Autenticação predefinida integrada",
+        "Suporte a AI agent capabilities",
+        "Documentação técnica completa",
+        "HTTP Request node como fallback"
+      ]
+    },
+    "popular_builtin_nodes": [
+      "GitHub",
+      "HubSpot", 
+      "Git",
+      "Slack",
+      "Google Drive",
+      "Microsoft Outlook",
+      "MySQL",
+      "PostgreSQL",
+      "Discord",
+      "Telegram",
+      "OpenAI",
+      "HTTP Request",
+      "Code (JavaScript/Python)"
+    ],
+    "node_categories": {
+      "app_nodes": "Integrações com aplicações específicas (GitHub, HubSpot, etc)",
+      "core_nodes": "Funcionalidades essenciais (HTTP Request, Code, etc)",
+      "database_nodes": "Conectores de banco de dados (MySQL, PostgreSQL, etc)",
+      "communication_nodes": "Ferramentas de comunicação (Slack, Discord, etc)",
+      "ai_nodes": "Integrações com IA (OpenAI, AI Agent capabilities)",
+      "utility_nodes": "Utilitários diversos (Git, Date/Time, etc)"
+    },
+    "authentication_system": {
+      "credential_types": "Predefined credential types para cada serviço",
+      "oauth_support": "OAuth integrado para serviços compatíveis",
+      "api_key_management": "Gerenciamento seguro de API keys",
+      "reusable_credentials": "Credenciais reutilizáveis entre workflows"
+    },
+    "structure_mapping": {
+      "_meta/": "Metadados e informações do repositório",
+      "docs/": "Documentação nodes organizados por categoria",
+      "integrations/": "400+ integrações builtin categorizadas",
+      "credentials/": "Sistema de autenticação integrado"
+    },
+    "connections": {
+      "depends_on": [],
+      "is_part_of": ["repo_003"],
+      "used_by": ["repo_001", "repo_002", "all workflows"],
+      "enables": ["400+ built-in integrations"]
+    }
+  },
+  "technical_architecture": {
+    "node_development": "TypeScript com n8n Node API",
+    "credential_system": "Integrated authentication framework",
+    "documentation_pattern": "Structured docs em n8n-docs repo",
+    "ai_capabilities": "Native support for AI agent tool usage",
+    "extensibility": "Base para community nodes development"
+  },
+  "developer_resources": {
+    "node_starter": "n8n-nodes-starter template repository",
+    "development_guide": "Complete documentation for custom nodes",
+    "api_version": "n8nNodesApiVersion: 1",
+    "publishing": "npm package publication workflow"
+  },
+  "neural_insights": {
+    "ecosystem_position": "Foundation de todas as integrações n8n",
+    "innovation_focus": "Built-in reliability, AI-native capabilities",
+    "community_impact": "Base para 2515+ community nodes",
+    "enterprise_readiness": "Production-grade com 400+ integrações"
+  }
+}
