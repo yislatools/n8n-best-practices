@@ -1,0 +1,102 @@
+{
+  "repository_metadata": {
+    "id": "repo_008",
+    "name": "restyler-awesome-n8n",
+    "source": "restyler/awesome-n8n",
+    "clone_timestamp": "2025-07-30T21:07:00Z",
+    "neural_classification": {
+      "level": "L4_COMMUNITY_RESOURCES",
+      "weight": 0.80,
+      "criticality": "medium",
+      "dependency_level": "high"
+    },
+    "repository_info": {
+      "description": "Awesome N8N: Top 100 Community Nodes - Lista curada dos nodes mais populares",
+      "primary_language": "Markdown",
+      "maintainer": "restyler Community",
+      "last_updated": "2025-07-06",
+      "total_nodes_indexed": 2515,
+      "key_features": [
+        "Top 100 community nodes por downloads",
+        "Estatísticas de crescimento do ecossistema",
+        "Categorização por funcionalidade",
+        "Dados de downloads mensais",
+        "Links para recursos úteis"
+      ]
+    },
+    "ecosystem_statistics": {
+      "growth_since_first_crawl": "1440 nodes",
+      "average_new_nodes_per_day": "9.5",
+      "latest_crawl": {
+        "date": "2025-07-06",
+        "total_nodes": 2515,
+        "new_nodes": 304,
+        "avg_per_day": "14.5"
+      },
+      "first_crawl": {
+        "date": "2025-02-04", 
+        "total_nodes": 1075
+      }
+    },
+    "structure_mapping": {
+      "_meta/": "Metadados e informações do repositório",
+      "docs/": "Lista awesome estruturada por categorias",
+      "code/": "Scripts de crawling e análise",
+      "templates/": "Templates para análise de nodes"
+    },
+    "connections": {
+      "depends_on": ["repo_003", "repo_007"],
+      "curates": ["repo_001", "repo_009"],
+      "references": ["all community nodes"],
+      "integrates_with": ["npmjs.com", "community ecosystem"]
+    }
+  },
+  "node_categories": {
+    "communication_messaging": {
+      "count": 20,
+      "top_node": "n8n-nodes-evolution-api (1,985,079 downloads)",
+      "focus": "WhatsApp, Discord, Chatwoot, Email"
+    },
+    "document_content_generation": {
+      "count": 4,
+      "top_node": "n8n-nodes-document-generator",
+      "focus": "PDF, QR codes, Markdown, templates"
+    },
+    "browser_automation_scraping": {
+      "count": 6,
+      "top_node": "n8n-nodes-puppeteer-extended (30,071 downloads)",
+      "focus": "Puppeteer, Playwright, Firecrawl"
+    },
+    "data_processing_utilities": {
+      "count": 9,
+      "top_node": "@splainez/n8n-nodes-phonenumber-parser",
+      "focus": "Text manipulation, validation, OCR"
+    },
+    "api_cloud_integrations": {
+      "count": 34,
+      "top_node": "n8n-nodes-asaas-v2 (43,064 downloads)",
+      "focus": "Payment, CRM, Cloud services"
+    },
+    "ai_llm_voice": {
+      "count": 11,
+      "top_node": "n8n-nodes-mcp (309,333 downloads)", 
+      "focus": "MCP, DeepSeek, ElevenLabs, Perplexity"
+    },
+    "file_pdf_manipulation": {
+      "count": 5,
+      "top_node": "n8n-nodes-pdfkit (42,488 downloads)",
+      "focus": "PDF generation, media processing"
+    },
+    "miscellaneous_testing": {
+      "count": 8,
+      "top_node": "@tavily/core (117,868 downloads)",
+      "focus": "Globals, randomization, testing"
+    }
+  },
+  "neural_insights": {
+    "ecosystem_position": "Curadoria e descoberta de community nodes",
+    "growth_pattern": "Aceleração constante (14.5 nodes/dia)",
+    "community_strength": "2515+ nodes, 100 top rankeados",
+    "business_value": "Descoberta e seleção de integrações"
+  }
+}
