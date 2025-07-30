@@ -1,0 +1,139 @@
+{
+  "repository_metadata": {
+    "id": "repo_001",
+    "name": "oriondesign2015-n8n-nodes-evolution-api", 
+    "source": "oriondesign2015/n8n-nodes-evolution-api",
+    "clone_timestamp": "2025-07-30T21:04:00Z",
+    "neural_classification": {
+      "level": "L2_EXTENDED_FUNCTIONALITY",
+      "weight": 0.85,
+      "criticality": "specialized",
+      "dependency_level": "medium"
+    },
+    "repository_info": {
+      "description": "Community Nodes para integração Evolution API v2.2+ com n8n",
+      "primary_language": "TypeScript/JavaScript",
+      "license": "Community/Free",
+      "developer": "OrionDesign (Brasileiro)",
+      "target_api": "Evolution API v2.2+",
+      "key_features": [
+        "100% gratuita",
+        "WhatsApp Integration",
+        "Múltiplos tipos de mensagem",
+        "Gerenciamento de grupos",
+        "Webhooks e RabbitMQ",
+        "Integrações com Chatwoot, Typebot, Dify"
+      ]
+    },
+    "requirements": {
+      "n8n_version": "1.54.4 ou superior",
+      "evolution_api_version": "2.2.0 ou superior"
+    },
+    "structure_mapping": {
+      "_meta/": "Metadados e informações do repositório",
+      "docs/": "Documentação estruturada principal",
+      "code/": "Código fonte organizado por módulos",
+      "templates/": "Templates específicos WhatsApp/Evolution"
+    },
+    "connections": {
+      "depends_on": ["repo_003", "repo_007"],
+      "extends": ["repo_007"],
+      "used_by": [],
+      "integrates_with": ["Evolution API", "WhatsApp"]
+    }
+  },
+  "functional_modules": {
+    "instancia": {
+      "description": "Funcionalidades relacionadas às instâncias da Evolution API",
+      "operations": [
+        "Criar Instancia",
+        "Gerar Qr-Code", 
+        "Buscar Instancia",
+        "Definir Comportamento",
+        "Definir Presença",
+        "Definir Proxy",
+        "Buscar Proxy",
+        "Desconectar WhatsApp",
+        "Deletar Instancia"
+      ]
+    },
+    "mensagem": {
+      "description": "Envio e gerenciamento de mensagens WhatsApp",
+      "operations": [
+        "Enviar Texto",
+        "Enviar Imagem",
+        "Enviar Video", 
+        "Enviar Audio",
+        "Enviar Documento",
+        "Enviar Enquete",
+        "Enviar Contato",
+        "Enviar Lista",
+        "Enviar Botão",
+        "Enviar Pix",
+        "Enviar Status",
+        "Reagir a Mensagem"
+      ]
+    },
+    "grupo": {
+      "description": "Gerenciamento completo de grupos WhatsApp",
+      "operations": [
+        "Criar Grupo",
+        "Atualizar Imagem do Grupo",
+        "Atualizar Nome do Grupo",
+        "Atualizar Descrição do Grupo",
+        "Atualizar Configurações do Grupo",
+        "Atualizar Membros",
+        "Buscar Link de convite do Grupo",
+        "Revogar Link de convite do Grupo",
+        "Enviar Link de Convite do Grupo",
+        "Encontrar Participantes",
+        "Mensagens Temporarias",
+        "Sair do Grupo",
+        "Entrar no Grupo"
+      ]
+    },
+    "chat": {
+      "description": "Gerenciamento de conversas e interações",
+      "operations": [
+        "Verificar Numero",
+        "Ler Mensagem",
+        "Gerenciar Arquivo",
+        "Marcar como Não lido",
+        "Deletar Mensagem",
+        "Buscar Foto de Perfil",
+        "Obter Midia em Base64",
+        "Editar Mensagem",
+        "Enviar Presença",
+        "Bloquear Contato",
+        "Buscar Contatos",
+        "Procurar Mensagens",
+        "Procurar Status",
+        "Procurar Chats"
+      ]
+    },
+    "evento": {
+      "description": "Integração e monitoramento em tempo real",
+      "operations": [
+        "Webhook",
+        "RabbitMQ"
+      ]
+    },
+    "integracao": {
+      "description": "Conectores para plataformas externas",
+      "operations": [
+        "Chatwoot",
+        "Evolution Bot",
+        "Typebot",
+        "Dify",
+        "Flowise"
+      ]
+    }
+  },
+  "neural_insights": {
+    "ecosystem_position": "Especialização WhatsApp via Evolution API",
+    "innovation_focus": "Community-driven Brazilian solution",
+    "license_model": "100% gratuita para comunidade",
+    "community_strength": "Desenvolvedores brasileiros, suporte ativo",
+    "business_value": "Automação WhatsApp Business completa"
+  }
+}
