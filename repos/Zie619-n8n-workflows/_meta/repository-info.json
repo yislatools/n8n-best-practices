@@ -1,0 +1,99 @@
+{
+  "repository_metadata": {
+    "id": "repo_006",
+    "name": "Zie619-n8n-workflows",
+    "source": "Zie619/n8n-workflows",
+    "clone_timestamp": "2025-07-30T21:13:00Z",
+    "neural_classification": {
+      "level": "L4_COMMUNITY_RESOURCES",
+      "weight": 0.70,
+      "criticality": "medium",
+      "dependency_level": "high"
+    },
+    "repository_info": {
+      "description": "Coleção mais abrangente de workflows n8n com tecnologia de busca avançada",
+      "primary_language": "JSON/Python",
+      "maintainer": "Zie619 Community",
+      "total_workflows": 2053,
+      "unique_integrations": 365,
+      "key_features": [
+        "2,053 workflows profissionalmente organizados",
+        "365 integrações únicas categorizadas",
+        "100% nomes significativos (melhorados)",
+        "Zero perda de dados durante renomeação",
+        "Busca avançada com 12 categorias de serviços",
+        "Busca sub-100ms com SQLite FTS5",
+        "Filtragem instantânea em 29,445 nós"
+      ]
+    },
+    "technical_stack": {
+      "database": "SQLite com FTS5 full-text indexing",
+      "backend": "Python 3.7+ com Flask/FastAPI",
+      "search_engine": "SQLite FTS5 com ranking otimizado",
+      "interface": "Interface responsiva com estatísticas em tempo real",
+      "schema_optimization": "Schema otimizado para queries ultra-rápidas"
+    },
+    "data_sources": {
+      "official_n8n": "Documentação oficial e exemplos da comunidade",
+      "github_repositories": "Contribuições open source da comunidade",
+      "blog_tutorials": "Padrões de automação do mundo real",
+      "user_submissions": "Workflows testados e verificados",
+      "enterprise_use_cases": "Automações de processos de negócios"
+    },
+    "database_schema": {
+      "workflows_table": {
+        "id": "INTEGER PRIMARY KEY",
+        "filename": "TEXT UNIQUE",
+        "name": "TEXT",
+        "active": "BOOLEAN",
+        "trigger_type": "TEXT",
+        "complexity": "TEXT",
+        "node_count": "INTEGER", 
+        "integrations": "TEXT (JSON array of 365 services)",
+        "description": "TEXT",
+        "file_hash": "TEXT (MD5 for change detection)",
+        "analyzed_at": "TIMESTAMP"
+      },
+      "fts_search": "CREATE VIRTUAL TABLE workflows_fts USING fts5"
+    },
+    "structure_mapping": {
+      "_meta/": "Metadados e informações do repositório",
+      "docs/": "Sistema de documentação Python",
+      "workflows/": "2053 workflows organizados em JSON",
+      "search/": "Sistema de busca FTS5 otimizado"
+    },
+    "connections": {
+      "depends_on": ["repo_002", "repo_003"],
+      "sources_from": ["n8n.io workflows", "GitHub repos", "community"],
+      "integrates_with": ["n8n editor", "Python documentation system"],
+      "used_by": ["developers", "workflow researchers"]
+    }
+  },
+  "usage_instructions": {
+    "installation": [
+      "git clone <repo-url>",
+      "cd n8n-workflows",
+      "pip install -r requirements.txt"
+    ],
+    "documentation_server": [
+      "python run.py",
+      "Browse at http://localhost:8000",
+      "Instant search across 2,053 workflows"
+    ],
+    "development_mode": [
+      "python run.py --dev",
+      "python run.py --host 0.0.0.0 --port 3000",
+      "python run.py --reindex"
+    ],
+    "workflow_import": [
+      "python import_workflows.py (recommended)",
+      "Manual: n8n Editor → Import workflow → Choose .json"
+    ]
+  },
+  "neural_insights": {
+    "ecosystem_position": "Coleção mais abrangente com busca avançada",
+    "innovation_focus": "Tecnologia de busca FTS5 e organização profissional",
+    "community_strength": "Curadoria de múltiplas fontes, 365 integrações",
+    "technical_excellence": "Sub-100ms search, zero data loss"
+  }
+}
