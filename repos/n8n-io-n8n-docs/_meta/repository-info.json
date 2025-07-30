@@ -1,0 +1,65 @@
+{
+  "repository_metadata": {
+    "id": "repo_004",
+    "name": "n8n-io-n8n-docs",
+    "source": "n8n-io/n8n-docs",
+    "clone_timestamp": "2025-07-30T21:02:00Z",
+    "neural_classification": {
+      "level": "L1_OFFICIAL_COMPONENTS",
+      "weight": 0.90,
+      "criticality": "high",
+      "dependency_level": "low"
+    },
+    "repository_info": {
+      "description": "Official documentation for n8n workflow automation platform",
+      "primary_language": "Markdown/Python",
+      "documentation_framework": "MkDocs Material",
+      "live_site": "https://docs.n8n.io/",
+      "key_features": [
+        "Comprehensive documentation",
+        "Local preview support",
+        "Style guidelines",
+        "Contributing framework",
+        "SSH integration for org members"
+      ]
+    },
+    "structure_mapping": {
+      "_meta/": "Metadados e informações do repositório",
+      "docs/": "Documentação estruturada principal",
+      "code/": "Código fonte organizado por módulos",
+      "templates/": "Templates específicos de documentação"
+    },
+    "connections": {
+      "depends_on": ["repo_003"],
+      "used_by": [],
+      "documents": ["repo_003", "repo_007"],
+      "integrates_with": ["repo_002"]
+    }
+  },
+  "technical_details": {
+    "prerequisites": [
+      "Python 3.8+",
+      "Pip",
+      "Virtual environment (recommended)",
+      "SSH token for org members"
+    ],
+    "local_setup": {
+      "org_members": "git clone --recurse-submodules git@github.com:n8n-io/n8n-docs.git",
+      "external_contributors": "Fork and clone from personal repository",
+      "dependencies": "pip install -r requirements.txt",
+      "preview": "mkdocs serve"
+    },
+    "documentation_stack": {
+      "framework": "MkDocs Material",
+      "format": "Markdown",
+      "theme": "Material for MkDocs",
+      "configuration": "mkdocs.yml"
+    }
+  },
+  "neural_insights": {
+    "ecosystem_position": "Documentação oficial centralizada",
+    "content_focus": "User guides, API reference, tutorials",
+    "license_model": "Fair-code (Sustainable Use License)",
+    "community_integration": "Contributing guidelines, style guides"
+  }
+}
