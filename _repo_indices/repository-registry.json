@@ -1,0 +1,122 @@
+{
+  "metadata": {
+    "created": "2025-07-30T00:00:00Z",
+    "version": "1.0.0",
+    "description": "Registro neural de repositórios n8n clonados",
+    "total_repositories": 9,
+    "neural_structure": "hierarchical-modular"
+  },
+  "repositories": {
+    "oriondesign2015-n8n-nodes-evolution-api": {
+      "id": "repo_001",
+      "source": "oriondesign2015/n8n-nodes-evolution-api",
+      "type": "nodes-extension",
+      "category": "evolution-api",
+      "status": "pending",
+      "neural_weight": 0.85,
+      "connections": [],
+      "tags": ["evolution", "api", "nodes", "whatsapp"],
+      "description": "Evolution API integration nodes for n8n"
+    },
+    "n8n-io-n8n-template-workflows": {
+      "id": "repo_002", 
+      "source": "n8n-io/n8n-template-workflows",
+      "type": "templates",
+      "category": "official-templates",
+      "status": "pending",
+      "neural_weight": 0.95,
+      "connections": ["repo_003", "repo_004"],
+      "tags": ["templates", "workflows", "official"],
+      "description": "Official n8n workflow templates"
+    },
+    "n8n-io-n8n-core": {
+      "id": "repo_003",
+      "source": "n8n-io/n8n", 
+      "type": "core",
+      "category": "core-platform",
+      "status": "pending",
+      "neural_weight": 1.0,
+      "connections": ["repo_002", "repo_004", "repo_007"],
+      "tags": ["core", "platform", "main"],
+      "description": "n8n core platform"
+    },
+    "n8n-io-n8n-docs": {
+      "id": "repo_004",
+      "source": "n8n-io/n8n-docs",
+      "type": "documentation", 
+      "category": "official-docs",
+      "status": "pending",
+      "neural_weight": 0.90,
+      "connections": ["repo_002", "repo_003"],
+      "tags": ["documentation", "official", "guides"],
+      "description": "Official n8n documentation"
+    },
+    "8gears-n8n-helm-chart": {
+      "id": "repo_005",
+      "source": "8gears/n8n-helm-chart",
+      "type": "infrastructure",
+      "category": "deployment",
+      "status": "pending", 
+      "neural_weight": 0.75,
+      "connections": ["repo_003"],
+      "tags": ["helm", "kubernetes", "deployment"],
+      "description": "Helm chart for n8n deployment"
+    },
+    "Zie619-n8n-workflows": {
+      "id": "repo_006",
+      "source": "Zie619/n8n-workflows",
+      "type": "workflows",
+      "category": "community-workflows", 
+      "status": "pending",
+      "neural_weight": 0.70,
+      "connections": ["repo_002"],
+      "tags": ["workflows", "community", "examples"],
+      "description": "Community workflow collection"
+    },
+    "n8n-io-n8n-nodes-base": {
+      "id": "repo_007",
+      "source": "n8n-io/n8n-nodes-base",
+      "type": "nodes",
+      "category": "core-nodes",
+      "status": "pending",
+      "neural_weight": 0.95,
+      "connections": ["repo_003"],
+      "tags": ["nodes", "base", "core"],
+      "description": "Base nodes for n8n"
+    },
+    "restyler-awesome-n8n": {
+      "id": "repo_008",
+      "source": "restyler/awesome-n8n", 
+      "type": "resources",
+      "category": "awesome-list",
+      "status": "pending",
+      "neural_weight": 0.80,
+      "connections": ["repo_009"],
+      "tags": ["awesome", "resources", "curated"],
+      "description": "Curated list of n8n resources"
+    },
+    "enescingoz-awesome-n8n-templates": {
+      "id": "repo_009",
+      "source": "enescingoz/awesome-n8n-templates",
+      "type": "templates",
+      "category": "awesome-templates",
+      "status": "pending",
+      "neural_weight": 0.75, 
+      "connections": ["repo_008", "repo_002"],
+      "tags": ["awesome", "templates", "curated"],
+      "description": "Curated n8n template collection"
+    }
+  },
+  "neural_statistics": {
+    "total_connections": 12,
+    "average_weight": 0.84,
+    "max_connections": 3,
+    "categories": {
+      "core": 2,
+      "templates": 2, 
+      "nodes": 2,
+      "resources": 2,
+      "infrastructure": 1
+    }
+  }
+}
