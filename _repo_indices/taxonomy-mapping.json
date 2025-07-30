@@ -1,0 +1,108 @@
+{
+  "taxonomy_metadata": {
+    "created": "2025-07-30T00:00:00Z",
+    "version": "1.0.0",
+    "description": "Mapeamento taxonômico hierárquico de repositórios n8n",
+    "classification_criteria": ["functionality", "audience", "lifecycle", "dependency_level"]
+  },
+  "hierarchical_taxonomy": {
+    "L0_CORE": {
+      "description": "Repositórios fundamentais do ecossistema n8n",
+      "repositories": ["repo_003"],
+      "characteristics": ["foundation", "critical", "high_dependency"],
+      "neural_weight_range": [0.95, 1.0]
+    },
+    "L1_OFFICIAL_COMPONENTS": {
+      "description": "Componentes oficiais mantidos pela equipe n8n",
+      "repositories": ["repo_002", "repo_004", "repo_007"],
+      "characteristics": ["official", "maintained", "stable"],
+      "neural_weight_range": [0.85, 0.95]
+    },
+    "L2_EXTENDED_FUNCTIONALITY": {
+      "description": "Extensões e funcionalidades especializadas",
+      "repositories": ["repo_001"],
+      "characteristics": ["specialized", "integration", "third_party"],
+      "neural_weight_range": [0.70, 0.90]
+    },
+    "L3_INFRASTRUCTURE": {
+      "description": "Ferramentas de deploy e infraestrutura",
+      "repositories": ["repo_005"],
+      "characteristics": ["deployment", "devops", "infrastructure"],
+      "neural_weight_range": [0.70, 0.85]
+    },
+    "L4_COMMUNITY_RESOURCES": {
+      "description": "Recursos e contribuições da comunidade",
+      "repositories": ["repo_006", "repo_008", "repo_009"],
+      "characteristics": ["community", "curated", "examples"],
+      "neural_weight_range": [0.60, 0.80]
+    }
+  },
+  "functional_taxonomy": {
+    "CORE_PLATFORM": {
+      "repositories": ["repo_003"],
+      "function": "Plataforma base de automação"
+    },
+    "NODE_SYSTEM": {
+      "repositories": ["repo_007", "repo_001"],
+      "function": "Sistema de nós e conectores"
+    },
+    "TEMPLATES_WORKFLOWS": {
+      "repositories": ["repo_002", "repo_006", "repo_009"], 
+      "function": "Templates e workflows pré-construídos"
+    },
+    "DOCUMENTATION": {
+      "repositories": ["repo_004"],
+      "function": "Documentação e guias"
+    },
+    "DEPLOYMENT": {
+      "repositories": ["repo_005"],
+      "function": "Deploy e infraestrutura"
+    },
+    "CURATION": {
+      "repositories": ["repo_008"],
+      "function": "Curadoria de recursos"
+    }
+  },
+  "audience_taxonomy": {
+    "DEVELOPERS": {
+      "repositories": ["repo_003", "repo_007", "repo_004", "repo_001"],
+      "focus": "Desenvolvimento e extensibilidade"
+    },
+    "END_USERS": {
+      "repositories": ["repo_002", "repo_006", "repo_009"],
+      "focus": "Templates prontos e workflows"
+    },
+    "DEVOPS": {
+      "repositories": ["repo_005"],
+      "focus": "Deploy e infraestrutura"
+    },
+    "COMMUNITY": {
+      "repositories": ["repo_008"],
+      "focus": "Descoberta de recursos"
+    }
+  },
+  "dependency_taxonomy": {
+    "ZERO_DEPENDENCY": {
+      "repositories": ["repo_003"],
+      "description": "Não dependem de outros repos"
+    },
+    "LOW_DEPENDENCY": {
+      "repositories": ["repo_007", "repo_004", "repo_005"],
+      "description": "Dependem apenas do core"
+    },
+    "MEDIUM_DEPENDENCY": { 
+      "repositories": ["repo_002", "repo_001"],
+      "description": "Dependem do core + nodes base"
+    },
+    "HIGH_DEPENDENCY": {
+      "repositories": ["repo_006", "repo_008", "repo_009"],
+      "description": "Dependem de múltiplos componentes"
+    }
+  },
+  "processing_order": {
+    "phase_1_core": ["repo_003"],
+    "phase_2_official": ["repo_007", "repo_004", "repo_002"],
+    "phase_3_extensions": ["repo_001", "repo_005"],
+    "phase_4_community": ["repo_006", "repo_008", "repo_009"]
+  }
+}
