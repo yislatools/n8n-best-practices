@@ -1,0 +1,225 @@
+{
+  "network_metadata": {
+    "created": "2025-07-30T00:00:00Z",
+    "network_type": "repository-synaptic",
+    "description": "Matriz de conexões sinápticas entre repositórios n8n",
+    "algorithm": "weighted-semantic-similarity",
+    "update_frequency": "dynamic"
+  },
+  "repositories": {
+    "repo_001": {
+      "name": "oriondesign2015-n8n-nodes-evolution-api",
+      "outbound_connections": [
+        {
+          "target": "repo_003",
+          "weight": 0.85,
+          "type": "dependency",
+          "description": "Depende do core n8n para funcionamento"
+        },
+        {
+          "target": "repo_007", 
+          "weight": 0.70,
+          "type": "extension",
+          "description": "Estende funcionalidades dos nodes base"
+        }
+      ],
+      "inbound_connections": []
+    },
+    "repo_002": {
+      "name": "n8n-io-n8n-template-workflows",
+      "outbound_connections": [
+        {
+          "target": "repo_003",
+          "weight": 0.95,
+          "type": "utilization", 
+          "description": "Templates utilizam funcionalidades core"
+        },
+        {
+          "target": "repo_007",
+          "weight": 0.90,
+          "type": "implementation",
+          "description": "Templates implementam nodes base"
+        }
+      ],
+      "inbound_connections": [
+        {
+          "source": "repo_006",
+          "weight": 0.75,
+          "type": "similarity",
+          "description": "Workflows comunitários similares"
+        },
+        {
+          "source": "repo_009",
+          "weight": 0.80,
+          "type": "curation",
+          "description": "Templates curados relacionados"
+        }
+      ]
+    },
+    "repo_003": {
+      "name": "n8n-io-n8n-core",
+      "outbound_connections": [],
+      "inbound_connections": [
+        {
+          "source": "repo_001",
+          "weight": 0.85,
+          "type": "dependency",
+          "description": "Evolution API depende do core"
+        },
+        {
+          "source": "repo_002", 
+          "weight": 0.95,
+          "type": "utilization",
+          "description": "Templates utilizam core"
+        },
+        {
+          "source": "repo_004",
+          "weight": 0.90,
+          "type": "documentation",
+          "description": "Documentação do core"
+        },
+        {
+          "source": "repo_005",
+          "weight": 0.85,
+          "type": "deployment",
+          "description": "Helm chart para deploy do core"
+        },
+        {
+          "source": "repo_007",
+          "weight": 0.95,
+          "type": "integration",
+          "description": "Nodes base integrados ao core"
+        }
+      ]
+    },
+    "repo_004": {
+      "name": "n8n-io-n8n-docs",
+      "outbound_connections": [
+        {
+          "target": "repo_003",
+          "weight": 0.90,
+          "type": "documentation",
+          "description": "Documenta funcionalidades do core"
+        },
+        {
+          "target": "repo_007",
+          "weight": 0.85,
+          "type": "reference",
+          "description": "Referência para nodes base"
+        }
+      ],
+      "inbound_connections": []
+    },
+    "repo_005": {
+      "name": "8gears-n8n-helm-chart",
+      "outbound_connections": [
+        {
+          "target": "repo_003",
+          "weight": 0.85,
+          "type": "deployment",
+          "description": "Deploy do core n8n"
+        }
+      ],
+      "inbound_connections": []
+    },
+    "repo_006": {
+      "name": "Zie619-n8n-workflows", 
+      "outbound_connections": [
+        {
+          "target": "repo_002",
+          "weight": 0.75,
+          "type": "similarity",
+          "description": "Workflows similares aos templates oficiais"
+        }
+      ],
+      "inbound_connections": []
+    },
+    "repo_007": {
+      "name": "n8n-io-n8n-nodes-base",
+      "outbound_connections": [
+        {
+          "target": "repo_003",
+          "weight": 0.95,
+          "type": "integration",
+          "description": "Integração com core"
+        }
+      ],
+      "inbound_connections": [
+        {
+          "source": "repo_001",
+          "weight": 0.70,
+          "type": "extension",
+          "description": "Evolution API estende nodes base"
+        },
+        {
+          "source": "repo_002",
+          "weight": 0.90,
+          "type": "implementation", 
+          "description": "Templates implementam nodes base"
+        },
+        {
+          "source": "repo_004",
+          "weight": 0.85,
+          "type": "reference",
+          "description": "Documentação referencia nodes base"
+        }
+      ]
+    },
+    "repo_008": {
+      "name": "restyler-awesome-n8n",
+      "outbound_connections": [
+        {
+          "target": "repo_009",
+          "weight": 0.80,
+          "type": "curation",
+          "description": "Lista curada relacionada"
+        }
+      ],
+      "inbound_connections": []
+    },
+    "repo_009": {
+      "name": "enescingoz-awesome-n8n-templates",
+      "outbound_connections": [
+        {
+          "target": "repo_002",
+          "weight": 0.80,
+          "type": "curation",
+          "description": "Templates curados relacionados aos oficiais"
+        },
+        {
+          "target": "repo_008",
+          "weight": 0.75,
+          "type": "similarity",
+          "description": "Lista awesome similar"
+        }
+      ],
+      "inbound_connections": [
+        {
+          "source": "repo_008",
+          "weight": 0.80,
+          "type": "curation",
+          "description": "Referenciado em awesome-n8n"
+        }
+      ]
+    }
+  },
+  "network_statistics": {
+    "total_connections": 20,
+    "bidirectional_connections": 4,
+    "average_connection_weight": 0.82,
+    "central_nodes": ["repo_003", "repo_002", "repo_007"],
+    "isolated_nodes": [],
+    "connection_types": {
+      "dependency": 3,
+      "utilization": 2,
+      "implementation": 2, 
+      "documentation": 2,
+      "extension": 2,
+      "curation": 4,
+      "similarity": 3,
+      "deployment": 2,
+      "integration": 2,
+      "reference": 2
+    }
+  }
+}
