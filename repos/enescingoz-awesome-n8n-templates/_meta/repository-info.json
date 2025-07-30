@@ -1,0 +1,107 @@
+{
+  "repository_metadata": {
+    "id": "repo_009",
+    "name": "enescingoz-awesome-n8n-templates",
+    "source": "enescingoz/awesome-n8n-templates",
+    "clone_timestamp": "2025-07-30T21:14:00Z",
+    "neural_classification": {
+      "level": "L4_COMMUNITY_RESOURCES",
+      "weight": 0.75,
+      "criticality": "medium",
+      "dependency_level": "high"
+    },
+    "repository_info": {
+      "description": "Coleção curada de templates n8n com foco em automações AI-powered",
+      "primary_language": "JSON/Markdown",
+      "maintainer": "Enes Cingöz",
+      "content_source": "Templates encontrados na internet (curadoria)",
+      "key_features": [
+        "Templates n8n com IA integrada",
+        "Conectores para apps populares (Gmail, Telegram, etc)",
+        "Automações ready-to-use",
+        "Foco em produtividade e economia de tempo",
+        "Suporte para contribuições da comunidade",
+        "Disclaimer de responsabilidade clara"
+      ]
+    },
+    "popular_integrations": [
+      "Gmail",
+      "Telegram", 
+      "Google Drive",
+      "Slack",
+      "Twitter/X",
+      "Zoom",
+      "ClickUp",
+      "Airtable",
+      "TradingView",
+      "Hugging Face",
+      "OpenAI",
+      "Perplexity AI"
+    ],
+    "template_categories": {
+      "ai_conversational": [
+        "AI-powered conversational interviews",
+        "External workflows as tools within n8n",
+        "Autonomous AI-powered web crawler"
+      ],
+      "business_automation": [
+        "Meeting summaries and ClickUp tasks from Zoom",
+        "Email subscription management with AI processing",
+        "AI appointment request qualification"
+      ],
+      "data_analysis": [
+        "SQL visualizations using OpenAI and Quickchart.io",
+        "TradingView chart analysis with Chrome extension",
+        "Research paper analysis from Hugging Face",
+        "Vector database for big data analysis"
+      ],
+      "content_creation": [
+        "Twitter/X thread translation and reposting",
+        "Perplexity AI research to HTML transformation",
+        "Visual regression testing with AI vision"
+      ],
+      "web_scraping": [
+        "Comprehensive scraping workflows",
+        "Image search engine with AI object detection",
+        "Automated data collection and analysis"
+      ]
+    },
+    "legal_disclaimer": {
+      "content_ownership": "Templates são de terceiros, não do autor do repositório",
+      "responsibility": "Autor não assume responsabilidade por danos",
+      "usage_rights": "Direitos pertencem aos criadores originais",
+      "purpose": "Acesso fácil e compartilhamento de templates"
+    },
+    "structure_mapping": {
+      "_meta/": "Metadados e informações do repositório",
+      "docs/": "Documentação organizada por categorias",
+      "templates/": "Templates organizados por função/aplicação",
+      "ai_powered/": "Templates específicos com integração IA"
+    },
+    "connections": {
+      "depends_on": ["repo_002", "repo_003"],
+      "curates_from": ["Internet sources", "Community templates"],
+      "integrates_with": ["n8n editor", "AI services"],
+      "references": ["repo_008", "repo_006"]
+    }
+  },
+  "ai_focus_areas": {
+    "conversational_ai": "Entrevistas interativas, coleta de dados",
+    "content_processing": "Tradução, reescrita, summarização",
+    "data_analysis": "KNN classification, anomaly detection",
+    "visual_ai": "Object detection, regression testing",
+    "research_automation": "Paper analysis, web crawling"
+  },
+  "contribution_model": {
+    "submission_process": "Issues ou pull requests welcome",
+    "categories_expansion": "Sugestões de novas categorias aceitas",
+    "template_validation": "Community review process",
+    "documentation": "README estruturado com categorias claras"
+  },
+  "neural_insights": {
+    "ecosystem_position": "Curadoria especializada em AI-powered templates",
+    "innovation_focus": "Integração IA com automação de processos",
+    "community_strength": "Curadoria ativa com disclaimers transparentes",
+    "business_value": "Templates prontos para produtividade imediata"
+  }
+}
