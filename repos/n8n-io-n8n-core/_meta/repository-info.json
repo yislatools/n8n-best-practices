@@ -1,0 +1,66 @@
+{
+  "repository_metadata": {
+    "id": "repo_003",
+    "name": "n8n-io-n8n-core",
+    "source": "n8n-io/n8n",
+    "clone_timestamp": "2025-07-30T21:01:00Z",
+    "neural_classification": {
+      "level": "L0_CORE",
+      "weight": 1.0,
+      "criticality": "critical",
+      "dependency_level": "zero"
+    },
+    "repository_info": {
+      "description": "n8n - Secure Workflow Automation for Technical Teams",
+      "primary_language": "TypeScript",
+      "license": "Sustainable Use License",
+      "stars": "~45k+",
+      "key_features": [
+        "Code When You Need It",
+        "AI-Native Platform", 
+        "Full Control",
+        "Enterprise-Ready",
+        "400+ Integrations"
+      ]
+    },
+    "structure_mapping": {
+      "_meta/": "Metadados e informações do repositório",
+      "docs/": "Documentação estruturada principal",
+      "code/": "Código fonte organizado por módulos",
+      "templates/": "Templates específicos do core"
+    },
+    "connections": {
+      "depends_on": [],
+      "used_by": [
+        "repo_001",
+        "repo_002", 
+        "repo_004",
+        "repo_005",
+        "repo_007"
+      ],
+      "integrates_with": [
+        "repo_007"
+      ]
+    }
+  },
+  "quick_access": {
+    "installation": {
+      "npx": "npx n8n",
+      "docker": "docker run -it --rm --name n8n -p 5678:5678 -v n8n_data:/home/node/.n8n docker.n8n.io/n8nio/n8n",
+      "access_url": "http://localhost:5678"
+    },
+    "key_resources": {
+      "documentation": "https://docs.n8n.io",
+      "integrations": "https://n8n.io/integrations", 
+      "workflows": "https://n8n.io/workflows",
+      "ai_guide": "https://docs.n8n.io/langchain/",
+      "community": "https://community.n8n.io"
+    }
+  },
+  "neural_insights": {
+    "ecosystem_position": "Núcleo fundamental do ecossistema n8n",
+    "innovation_focus": "AI-native automation with code flexibility",
+    "license_model": "Fair-code with enterprise options",
+    "community_strength": "900+ templates, active forum"
+  }
+}
