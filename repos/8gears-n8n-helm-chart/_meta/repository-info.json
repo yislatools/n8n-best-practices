@@ -1,0 +1,84 @@
+{
+  "repository_metadata": {
+    "id": "repo_005",
+    "name": "8gears-n8n-helm-chart",
+    "source": "8gears/n8n-helm-chart", 
+    "clone_timestamp": "2025-07-30T21:06:00Z",
+    "neural_classification": {
+      "level": "L3_INFRASTRUCTURE",
+      "weight": 0.75,
+      "criticality": "medium",
+      "dependency_level": "low"
+    },
+    "repository_info": {
+      "description": "Helm Chart oficial para deploy n8n em Kubernetes",
+      "primary_language": "YAML/Helm",
+      "maintainer": "8gears Community",
+      "artifact_hub": "https://artifacthub.io/packages/helm/open-8gears/n8n",
+      "helm_version": ">=3.8",
+      "chart_version": "1.0.0+",
+      "key_features": [
+        "Deployment completo n8n",
+        "Scaling com queue-mode",
+        "Worker separation",
+        "Webhook isolation", 
+        "Redis/Valkey integration",
+        "Enterprise ready"
+      ]
+    },
+    "requirements": {
+      "helm": ">=3.8",
+      "external_postgres": "optional (SQLite embedded available)",
+      "helmfile": "optional"
+    },
+    "structure_mapping": {
+      "_meta/": "Metadados e informações do repositório",
+      "docs/": "Documentação estruturada principal", 
+      "code/": "Templates Helm e configurações",
+      "templates/": "Exemplos de deployment específicos"
+    },
+    "connections": {
+      "depends_on": ["repo_003"],
+      "deploys": ["repo_003"],
+      "used_by": [],
+      "integrates_with": ["Kubernetes", "PostgreSQL", "Redis/Valkey"]
+    }
+  },
+  "deployment_architecture": {
+    "components": {
+      "main": "n8n application principal + Kubernetes settings",
+      "worker": "Worker instances para queue-mode",
+      "webhook": "Webhook instances dedicadas",
+      "redis": "Redis/Valkey para queue management"
+    },
+    "scaling_modes": {
+      "single_instance": "Deployment padrão single pod",
+      "queue_mode": "Multi-worker com Redis para shared load",
+      "webhook_separation": "Webhooks processados em pods dedicados"
+    },
+    "persistence_options": {
+      "sqlite": "Embedded database (default)",
+      "postgresql": "External PostgreSQL database",
+      "storage": "PVC ou emptyDir para dados"
+    }
+  },
+  "configuration_structure": {
+    "values_sections": [
+      "Global and chart wide values",
+      "Ingress configuration",
+      "Main n8n app configuration",
+      "Worker related settings", 
+      "Webhook related settings",
+      "Raw Resources manifests",
+      "Redis/Valkey settings"
+    ],
+    "env_var_mapping": "config/secret -> ENV variables 1:1",
+    "examples_directory": "/examples com configurações típicas"
+  },
+  "neural_insights": {
+    "ecosystem_position": "Deploy e infraestrutura Kubernetes",
+    "innovation_focus": "Scaling horizontal com queue-mode",
+    "community_strength": "Looking for maintainers - growing popularity",
+    "enterprise_readiness": "Production-ready com HA options"
+  }
+}
