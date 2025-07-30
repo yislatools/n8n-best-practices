@@ -1,0 +1,79 @@
+{
+  "repository_metadata": {
+    "id": "repo_002",
+    "name": "n8n-io-n8n-template-workflows",
+    "source": "n8n.io/workflows (web-based)",
+    "clone_timestamp": "2025-07-30T21:10:00Z",
+    "neural_classification": {
+      "level": "L1_OFFICIAL_COMPONENTS",
+      "weight": 0.95,
+      "criticality": "high",
+      "dependency_level": "medium"
+    },
+    "repository_info": {
+      "description": "Biblioteca oficial de templates n8n com 4060+ workflows da comunidade global",
+      "primary_language": "JSON (workflow definitions)",
+      "platform": "Web-based (n8n.io/workflows)",
+      "total_workflows": 4060,
+      "growth_model": "Community-driven submissions",
+      "key_features": [
+        "4060+ automated workflow templates",
+        "Global community contributions", 
+        "Ready-made solutions",
+        "Category-based organization",
+        "Affiliate program for creators",
+        "Integration with n8n editor"
+      ]
+    },
+    "workflow_categories": {
+      "AI": "6 workflow templates",
+      "Sales": "AI-powered sales automations",
+      "IT Ops": "4 workflow templates", 
+      "Marketing": "Campaign and social media automations",
+      "Document Ops": "Document processing workflows",
+      "Support": "Customer support automations"
+    },
+    "popular_integrations": [
+      "Google Sheets",
+      "OpenAI", 
+      "Telegram",
+      "Gmail",
+      "MySQL",
+      "Postgres",
+      "Discord",
+      "Google Drive",
+      "Slack",
+      "Notion",
+      "Microsoft Outlook"
+    ],
+    "structure_mapping": {
+      "_meta/": "Metadados e informações do repositório",
+      "docs/": "Documentação de templates organizados",
+      "templates/": "Workflows categorizados por função",
+      "integrations/": "Templates por tipo de integração"
+    },
+    "connections": {
+      "depends_on": ["repo_003"],
+      "used_by": ["developers", "business users", "community"],
+      "integrates_with": ["n8n editor", "template library"],
+      "feeds_into": ["repo_006", "repo_009"]
+    }
+  },
+  "access_model": {
+    "submission_process": "Community contributors submit templates",
+    "review_system": "n8n team review and featured selection",
+    "monetization": "Affiliate program for template creators",
+    "import_method": "Direct import to n8n editor",
+    "backup_workflows": [
+      "Save workflows to GitHub repository",
+      "Version control integration",
+      "Automated backup systems"
+    ]
+  },
+  "neural_insights": {
+    "ecosystem_position": "Hub central de templates oficiais",
+    "community_strength": "4060+ templates, crescimento global",
+    "business_model": "Community-driven com affiliate program", 
+    "innovation_focus": "AI integration, ready-to-use automations"
+  }
+}
