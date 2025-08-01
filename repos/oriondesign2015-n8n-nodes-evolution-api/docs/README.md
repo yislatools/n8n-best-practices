@@ -1,318 +1,191 @@
-# 🇧🇷 Evolution API Nodes - WhatsApp Business Automation Leader
+# 🇧🇷 Evolution API - Líder Mundial WhatsApp Business
 
-![Evolution API Banner](https://github.com/user-attachments/assets/813b7b34-377c-42e8-9f1a-12e27e682c7f)
+## 📊 METADADOS DO REPOSITÓRIO
 
-> **🏆 LÍDER MUNDIAL**: 1.9M downloads/mês - Maior community node do ecossistema n8n  
-> **🇧🇷 Inovação Brasileira**: OrionDesign dominando automação WhatsApp globalmente  
-> **📊 Neural Weight**: 0.85 (L2_EXTENDED_FUNCTIONALITY)
+**Repositório**: `oriondesign2015/n8n-nodes-evolution-api`  
+**Status**: **LÍDER MUNDIAL** - Community Node #1  
+**Downloads**: **1.9M/mês** (Junho 2025)  
+**Desenvolvedor**: OrionDesign (Brasil)  
+**Categoria**: L2_EXTENDED (Peso Neural: 0.95)  
 
----
+## 🚀 VISÃO GERAL
 
-## 🎯 **Visão Geral**
+Este Community Node é uma **solução 100% gratuita** criada para simplificar e auxiliar toda a comunidade a integrar e utilizar ao máximo os principais recursos oferecidos pela **Evolution API v2.2+** em projetos N8N.
 
-Este Community Node é uma solução **100% gratuita** criada pela OrionDesign para simplificar e potencializar a integração com a **Evolution API v2.2+** em projetos n8n. Representa o **maior sucesso brasileiro** no ecossistema global de automação.
+### **REQUISITOS TÉCNICOS**
+- **N8N**: Versão 1.54.4 ou superior
+- **Evolution API**: Versão 2.2.0 ou superior
+- **Compatibilidade**: WhatsApp Business API
 
-### 📊 **Estatísticas de Domínio**
-- **1.985.079 downloads/mês** (julho 2025)
-- **Posição #1** entre todos community nodes globalmente
-- **Crescimento exponencial** sustentado
-- **Liderança brasileira** em inovação WhatsApp Business
+## 🛠️ MÓDULOS FUNCIONAIS (6 MÓDULOS)
 
----
+### **1. INSTÂNCIA - Gerenciamento Completo**
+**Descrição**: Acesso completo às principais funcionalidades relacionadas às instâncias da Evolution API.
 
-## ⚙️ **Requisitos Técnicos**
+**Operações Disponíveis (9)**:
+- ✅ **Criar Instancia** - Criação de novas instâncias
+- ✅ **Gerar Qr-Code** - Geração de códigos QR para conexão
+- ✅ **Buscar Instancia** - Recuperação de informações da instância
+- ✅ **Definir Comportamento** - Configuração de comportamentos personalizados
+- ✅ **Definir Presença** - Controle de status de presença
+- ✅ **Definir Proxy** - Configuração de proxy para conexões
+- ✅ **Buscar Proxy** - Recuperação de configurações de proxy
+- ✅ **Desconectar WhatsApp** - Desconexão controlada
+- ✅ **Deletar Instancia** - Remoção segura de instâncias
 
-| Componente | Versão Mínima | Status |
-|------------|---------------|--------|
-| **n8n** | 1.54.4+ | ✅ Suportado |
-| **Evolution API** | 2.2.0+ | ✅ Compatível |
-| **Node.js** | 18+ | ✅ Recomendado |
-| **WhatsApp Business** | Multi-Device | ✅ Nativo |
+### **2. MENSAGEM - Comunicação Avançada**
+**Descrição**: Funcionalidades completas para envio e gerenciamento de mensagens com suporte a todos os tipos de conteúdo WhatsApp.
 
----
+**Operações Disponíveis (12)**:
+- ✅ **Enviar Texto** - Mensagens de texto com formatação
+- ✅ **Enviar Imagem** - Envio de imagens com caption
+- ✅ **Enviar Video** - Compartilhamento de vídeos
+- ✅ **Enviar Audio** - Mensagens de áudio e voice notes
+- ✅ **Enviar Documento** - Compartilhamento de arquivos
+- ✅ **Enviar Enquete** - Criação de enquetes interativas
+- ✅ **Enviar Contato** - Compartilhamento de contatos
+- ✅ **Enviar Lista** - Listas interativas personalizadas
+- ✅ **Enviar Botão** - Botões de ação personalizados
+- ✅ **Enviar Pix** - Mensagens PIX para pagamentos
+- ✅ **Enviar Status** - Publicação em status/stories
+- ✅ **Reagir a Mensagem** - Reações emoji em mensagens
 
-## 🚀 **Módulos Funcionais Disponíveis**
+**Recursos Avançados**:
+- **Delay configurável** para envios
+- **Mentions** (@usuários) 
+- **Replies** (respostas)
+- **Formatações especiais** (negrito, itálico, etc.)
 
-### 🖥️ **1. Instância** 
-**Gerenciamento completo de instâncias WhatsApp**
+### **3. GRUPO - Administração Completa**
+**Descrição**: Conjunto completo de funcionalidades para gerenciamento de grupos WhatsApp.
 
-<details>
-<summary><b>✅ 9 Operações Disponíveis</b></summary>
+**Operações Disponíveis (13)**:
+- ✅ **Criar Grupo** - Criação de novos grupos
+- ✅ **Atualizar Imagem do Grupo** - Modificação de avatar
+- ✅ **Atualizar Nome do Grupo** - Renomeação de grupos
+- ✅ **Atualizar Descrição do Grupo** - Edição de descrições
+- ✅ **Atualizar Configurações do Grupo** - Permissões e configurações
+- ✅ **Atualizar Membros** - Adicionar/remover participantes
+- ✅ **Buscar Link de convite do Grupo** - Obtenção de links
+- ✅ **Revogar Link de convite do Grupo** - Invalidação de links
+- ✅ **Enviar Link de Convite do Grupo** - Compartilhamento automático
+- ✅ **Encontrar Participantes** - Listagem de membros
+- ✅ **Mensagens Temporarias** - Configuração de auto-delete
+- ✅ **Sair do Grupo** - Saída controlada
+- ✅ **Entrar no Grupo** - Ingresso via link/convite
 
-| Operação | Descrição | Caso de Uso |
-|----------|-----------|-------------|
-| **Criar Instancia** | Inicializa nova instância WhatsApp | Setup inicial |
-| **Gerar Qr-Code** | Gera QR para conexão | Autenticação |
-| **Buscar Instancia** | Consulta status da instância | Monitoramento |
-| **Definir Comportamento** | Configura comportamento automático | Personalização |
-| **Definir Presença** | Controla status online/offline | Gestão presença |
-| **Definir Proxy** | Configura proxy para conexão | Segurança |
-| **Buscar Proxy** | Consulta configurações proxy | Debugging |
-| **Desconectar WhatsApp** | Desconecta instância seguramente | Manutenção |
-| **Deletar Instancia** | Remove instância completamente | Limpeza |
+### **4. CHAT - Gestão de Conversas**
+**Descrição**: Ferramentas abrangentes para gerenciamento de conversas e interações.
 
-</details>
+**Operações Disponíveis (14)**:
+- ✅ **Verificar Numero** - Validação de números WhatsApp
+- ✅ **Ler Mensagem** - Marcação como lida
+- ✅ **Gerenciar Arquivo** - Controle de arquivos
+- ✅ **Marcar como Não lido** - Controle de status de leitura
+- ✅ **Deletar Mensagem** - Remoção de mensagens
+- ✅ **Buscar Foto de Perfil** - Obtenção de avatares
+- ✅ **Obter Midia em Base64** - Conversão de mídia
+- ✅ **Editar Mensagem** - Modificação de mensagens enviadas
+- ✅ **Enviar Presença** - Controle de "digitando", "online"
+- ✅ **Bloquear Contato** - Gerenciamento de bloqueios
+- ✅ **Buscar Contatos** - Listagem de contatos
+- ✅ **Procurar Mensagens** - Busca em histórico
+- ✅ **Procurar Status** - Visualização de stories
+- ✅ **Procurar Chats** - Listagem de conversas
 
-### ✉️ **2. Mensagem**
-**Hub completo para envio de todos os tipos de mensagem**
+### **5. EVENTO - Integração em Tempo Real**
+**Descrição**: Mecanismos avançados para integração e monitoramento em tempo real.
 
-<details>
-<summary><b>✅ 12 Operações Disponíveis</b></summary>
+**Operações Disponíveis (2)**:
+- ✅ **Webhook** - Configuração de webhooks para eventos
+- ✅ **RabbitMQ** - Integração com message broker
 
-| Operação | Descrição | Recursos Avançados |
-|----------|-----------|-------------------|
-| **Enviar Texto** | Mensagens de texto simples/formatadas | Mentions, replies, delay |
-| **Enviar Imagem** | Imagens com caption opcional | Compressão automática |
-| **Enviar Video** | Vídeos com preview | Otimização formato |
-| **Enviar Audio** | Áudios e voice messages | Conversão automática |
-| **Enviar Documento** | PDFs, arquivos diversos | Preview integrado |
-| **Enviar Enquete** | Enquetes interativas | Múltiplas opções |
-| **Enviar Contato** | Compartilhar contatos | vCard format |
-| **Enviar Lista** | Listas interativas | Até 10 itens |
-| **Enviar Botão** | Botões de ação | Até 3 botões |
-| **Enviar Pix** | Pagamentos PIX integrados | QR Code automático |
-| **Enviar Status** | Stories/Status updates | 24h temporário |
-| **Reagir a Mensagem** | Reações emoji | Interação rápida |
-
-</details>
-
-### 👥 **3. Grupo** 
-**Administração completa de grupos WhatsApp**
-
-<details>
-<summary><b>✅ 13 Operações Disponíveis</b></summary>
-
-| Operação | Descrição | Casos de Uso |
-|----------|-----------|-------------|
-| **Criar Grupo** | Cria novos grupos | Comunidades, equipes |
-| **Atualizar Imagem do Grupo** | Muda foto do grupo | Branding |
-| **Atualizar Nome do Grupo** | Altera nome do grupo | Reorganização |
-| **Atualizar Descrição do Grupo** | Modifica descrição | Informações atualizadas |
-| **Atualizar Configurações do Grupo** | Permissões e configurações | Controle avançado |
-| **Atualizar Membros** | Adiciona/remove participantes | Gestão membros |
-| **Buscar Link de convite do Grupo** | Obtém link de convite | Compartilhamento |
-| **Revogar Link de convite do Grupo** | Revoga link atual | Segurança |
-| **Enviar Link de Convite do Grupo** | Compartilha link via mensagem | Divulgação |
-| **Encontrar Participantes** | Lista membros do grupo | Auditoria |
-| **Mensagens Temporarias** | Configura mensagens temporárias | Privacidade |
-| **Sair do Grupo** | Remove a instância do grupo | Saída controlada |
-| **Entrar no Grupo** | Ingressa via link | Participação |
-
-</details>
-
-### 💬 **4. Chat**
-**Gerenciamento avançado de conversas e interações**
-
-<details>
-<summary><b>✅ 14 Operações Disponíveis</b></summary>
-
-| Operação | Descrição | Aplicação |
-|----------|-----------|-----------|
-| **Verificar Numero** | Valida números WhatsApp | Validação contatos |
-| **Ler Mensagem** | Marca mensagens como lidas | Gestão conversas |
-| **Gerenciar Arquivo** | Arquiva/desarquiva chats | Organização |
-| **Marcar como Não lido** | Marca conversas não lidas | Lembretes |
-| **Deletar Mensagem** | Remove mensagens | Moderação |
-| **Buscar Foto de Perfil** | Obtém fotos de perfil | Identificação |
-| **Obter Midia em Base64** | Converte mídia para Base64 | Processamento |
-| **Editar Mensagem** | Modifica mensagens enviadas | Correções |
-| **Enviar Presença** | Indica digitando/online | UX melhorada |
-| **Bloquear Contato** | Bloqueia usuários | Moderação |
-| **Buscar Contatos** | Lista contatos disponíveis | CRM sync |
-| **Procurar Mensagens** | Busca em histórico | Auditoria |
-| **Procurar Status** | Consulta stories/status | Monitoramento |
-| **Procurar Chats** | Lista conversas ativas | Dashboard |
-
-</details>
-
-### ⚡ **5. Evento**
-**Integração e monitoramento em tempo real**
-
-<details>
-<summary><b>✅ 2 Operações Disponíveis</b></summary>
-
-| Operação | Descrição | Benefícios |
-|----------|-----------|------------|
-| **Webhook** | Configuração de webhooks | Automação tempo real |
-| **RabbitMQ** | Integração com RabbitMQ | Mensageria robusta |
-
-**Eventos Monitorados:**
+**Eventos Monitorados**:
 - Mensagens recebidas
-- Status de entrega
-- Alterações em grupos  
-- Conexão/desconexão
-- Presença de usuários
+- Alterações em grupos
+- Status de conexão
+- Mudanças de presença
+- Updates de perfil
 
-</details>
+### **6. INTEGRAÇÃO - Conectores Avançados**
+**Descrição**: Conectores para integração com plataformas e serviços externos.
 
-### 🔗 **6. Integração**
-**Conectores para plataformas externas**
+**Operações Disponíveis (5)**:
+- ✅ **Chatwoot** - Integração com atendimento ao cliente
+- ✅ **Evolution Bot** - Automações e chatbots
+- ✅ **Typebot** - Fluxos conversacionais
+- ✅ **Dify** - Soluções de inteligência artificial
+- ✅ **Flowise** - Automação de workflows IA
 
-<details>
-<summary><b>✅ 5 Operações Disponíveis</b></summary>
+## 🎯 CASOS DE USO ESTRATÉGICOS
 
-| Integração | Descrição | Casos de Uso |
-|------------|-----------|-------------|
-| **Chatwoot** | CRM atendimento ao cliente | Suporte multicanal |
-| **Evolution Bot** | Automações inteligentes | Chatbots avançados |
-| **Typebot** | Fluxos conversacionais | Jornadas interativas |
-| **Dify** | Soluções IA integradas | Automação inteligente |
-| **Flowise** | Low-code IA workflows | Desenvolvimento rápido |
+### **ATENDIMENTO AO CLIENTE**
+- **Chatbots automatizados** com Typebot/Evolution Bot
+- **Integração CRM** via Chatwoot
+- **Respostas automáticas** baseadas em IA
+- **Gestão de tickets** e suporte 24/7
 
-</details>
+### **MARKETING E VENDAS**
+- **Campanhas WhatsApp** com listas e botões
+- **PIX integrado** para pagamentos diretos
+- **Status/Stories** para promoções
+- **Grupos de clientes** segmentados
 
----
+### **AUTOMAÇÃO EMPRESARIAL**
+- **Notificações de sistema** via webhook
+- **Integrações ERP/CRM** 
+- **Backups automáticos** de conversas
+- **Relatórios de engajamento**
 
-## 🛠️ **Guia de Implementação**
+## 🏆 VANTAGENS COMPETITIVAS
 
-### 🚀 **Quick Start**
+### **COMPLETUDE FUNCIONAL**
+- **50+ operações** cobrindo 100% da Evolution API
+- **Todos os tipos de mídia** suportados
+- **Funcionalidades exclusivas** (PIX, enquetes, etc.)
+- **Integrações nativas** com principais plataformas
 
-```bash
-# 1. Instalar via n8n Community Nodes
-npm install n8n-nodes-evolution-api
+### **QUALIDADE TÉCNICA**
+- **Código bem estruturado** e documentado
+- **Tratamento robusto** de erros
+- **Performance otimizada** para alto volume
+- **Compatibilidade garantida** com N8N recente
 
-# 2. Configurar Evolution API
-# URL: https://sua-evolution-api.com
-# API Key: seu-token-de-acesso
+### **SUPORTE COMUNITÁRIO**
+- **Documentação completa** em português
+- **Suporte ativo** da comunidade brasileira
+- **Exemplos práticos** e tutoriais
+- **Updates frequentes** seguindo Evolution API
 
-# 3. Criar primeira instância
-# Operation: Criar Instancia
-# Instance Name: "MinhaEmpresa"
-```
+## 📈 MÉTRICAS DE SUCESSO
 
-### 📋 **Checklist de Setup**
+### **ADOÇÃO MUNDIAL**
+- **1.9M downloads/mês** - Líder absoluto
+- **Comunidade global** usando solução brasileira
+- **Referência de qualidade** para community nodes
+- **Padrão de mercado** para WhatsApp Business
 
-- [ ] Evolution API v2.2+ rodando
-- [ ] n8n v1.54.4+ instalado  
-- [ ] Community node instalado
-- [ ] Credenciais configuradas
-- [ ] Primeira instância criada
-- [ ] QR Code escaneado
-- [ ] Testes de envio realizados
+### **IMPACTO ECONÔMICO**
+- **Milhares de empresas** usando a solução
+- **Economia significativa** vs. APIs pagas
+- **Democratização** do WhatsApp Business
+- **Export de tecnologia** brasileira
 
-### 🎯 **Casos de Uso Populares**
+## 🔗 CONEXÕES NEURAIS
 
-#### 🏢 **Business Automation**
-```
-Workflow: Lead → Qualificação → WhatsApp → CRM
-├── Webhook recebe lead
-├── IA qualifica informações  
-├── Evolution API envia mensagem personalizada
-└── Dados sincronizam com CRM
-```
+### **RELACIONAMENTOS IDENTIFICADOS**
+- **Evolution API** (dependência forte: 1.0)
+- **WhatsApp Business** (integração: 0.95)
+- **N8N Community** (liderança: 0.90)
+- **Chatbot Platforms** (complementar: 0.85)
+- **Brazilian Tech Scene** (origem: 0.80)
 
-#### 🛒 **E-commerce Integration**
-```
-Workflow: Pedido → Confirmação → Tracking → Suporte
-├── Novo pedido detectado
-├── Confirmação via WhatsApp
-├── Updates de tracking automáticos
-└── Canal suporte integrado
-```
-
-#### 📊 **Customer Support**
-```
-Workflow: Ticket → Chatwoot → WhatsApp → Resolução
-├── Ticket criado no sistema
-├── Chatwoot gerencia conversa
-├── WhatsApp como canal principal
-└── Métricas de satisfação
-```
-
----
-
-## 📊 **Arquitetura e Performance**
-
-### 🏗️ **Arquitetura Recomendada**
-
-```mermaid
-graph TB
-    A[n8n Workflow] --> B[Evolution API Node]
-    B --> C[Evolution API Server]
-    C --> D[WhatsApp Multi-Device]
-    
-    B --> E[Webhook Receiver]
-    E --> F[Event Processing]
-    F --> G[External Integrations]
-    
-    G --> H[Chatwoot]
-    G --> I[CRM Systems]  
-    G --> J[AI Services]
-```
-
-### ⚡ **Métricas de Performance**
-
-| Métrica | Valor | Observação |
-|---------|--------|------------|
-| **Latência Média** | <200ms | Mensagens texto |
-| **Throughput** | 1000 msg/min | Por instância |
-| **Uptime** | 99.9% | Evolution API |
-| **Concurrent Users** | 500+ | Por servidor |
+### **INFLUÊNCIA NO ECOSSISTEMA**
+- **Padrão de qualidade** para community nodes
+- **Referência técnica** para integrações WhatsApp
+- **Caso de sucesso** brasileiro global
+- **Inspiração** para outros desenvolvedores
 
 ---
 
-## 🤝 **Contribuição e Comunidade**
-
-### 👥 **Principais Contribuidores**
-
-<a href="https://github.com/oriondesign2015/n8n-nodes-evolution-api/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=oriondesign2015/n8n-nodes-evolution-api" />
-</a>
-
-### 🌟 **Como Contribuir**
-
-1. **Pull Requests**: Melhorias, correções, novas funcionalidades
-2. **Issues**: Reporte problemas ou sugira ideias  
-3. **Documentação**: Ajude a expandir exemplos e guias
-4. **Testes**: Teste em diferentes cenários e reporte
-
-### 📈 **Crescimento da Comunidade**
-
-<a href="https://star-history.com/#oriondesign2015/SetupOrion&Date">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=oriondesign2015/SetupOrion&type=Date&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=oriondesign2015/SetupOrion&type=Date" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=oriondesign2015/SetupOrion&type=Date" />
- </picture>
-</a>
-
----
-
-## 🔗 **Links e Recursos**
-
-### 📚 **Documentação**
-- [Evolution API Docs](https://doc.evolution-api.com/)
-- [n8n Community Nodes](https://docs.n8n.io/integrations/community-nodes/)
-- [WhatsApp Business API](https://developers.facebook.com/docs/whatsapp)
-
-### 🛠️ **Suporte Técnico**  
-- [GitHub Issues](https://github.com/oriondesign2015/n8n-nodes-evolution-api/issues)
-- [OrionDesign Support](https://oriondesign.art.br)
-- [Community Discord](https://discord.gg/n8n)
-
-### 🌐 **Links Importantes**
-- [NPM Package](https://www.npmjs.com/package/n8n-nodes-evolution-api)
-- [Source Code](https://github.com/oriondesign2015/n8n-nodes-evolution-api)
-- [Evolution API](https://github.com/EvolutionAPI/evolution-api)
-
----
-
-## 🏆 **Reconhecimentos**
-
-### 🥇 **Conquistas**
-- **#1 Community Node Mundial** (1.9M downloads/mês)
-- **Liderança Brasileira** em automação WhatsApp
-- **Inovação Global** reconhecida pela comunidade n8n
-- **100% Open Source** e gratuito para comunidade
-
-### 🎖️ **Impacto no Ecossistema**
-- Elevou o Brasil ao topo da inovação n8n global
-- Democratizou automação WhatsApp Business
-- Inspirou centenas de outros community nodes
-- Criou padrão de qualidade para integrações WhatsApp
-
----
-
-**🇧🇷 Desenvolvido com ❤️ por OrionDesign - Leading the global n8n community from Brazil! 🌟**
-
-*"Da inovação brasileira para o mundo: transformando a automação WhatsApp Business globalmente"*
+**🎯 CONCLUSÃO**: O Evolution API representa o **maior sucesso brasileiro no ecossistema N8N**, demonstrando a capacidade técnica nacional de liderar inovações globais em automação empresarial.
